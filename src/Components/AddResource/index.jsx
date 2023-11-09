@@ -435,7 +435,7 @@ const AddResourceEvent = (props) => {
                         })}
                       </div>
                     </Grid>
-                    <div>
+                    <div style={{ marginTop: "2px", color: "#FF000D" }}>
                       {touched.workDays &&
                         errors?.workDays &&
                         values?.workDays?.length === 0 &&
