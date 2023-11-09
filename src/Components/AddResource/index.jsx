@@ -316,7 +316,7 @@ const AddResourceEvent = (props) => {
                   <Grid item xs={10} m={0} height={"fit-content"}>
                     <InputField
                       size="small"
-                      name="email"
+                      name="roles"
                       hiddenLabel
                       placeholder="eg.: Designer, Senior,etc."
                       InputProps={{ disableUnderline: true }}
