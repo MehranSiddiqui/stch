@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { defaultTheme } from "./themes/defaultTheme";
+import Scheduler from "./Components/Scheduler";
+import Calender from "./Components/Scheuler2";
 function App() {
+  const currentTheme = createTheme(defaultTheme);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={currentTheme}>
+      <div>
+        {/* <Scheduler /> */}
+        <Calender />
+      </div>
+    </ThemeProvider>
   );
 }
 
