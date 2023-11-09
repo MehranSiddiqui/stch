@@ -202,7 +202,7 @@ const AddResourceEvent = (props) => {
   console.log(FormValidator);
   const createResource = (values) => {
     const requiredObject = {
-      name: `${values?.firstName + values?.lastName}`,
+      name: `${values?.firstName} ${values?.lastName}`,
       id: resourceLength + 1,
       rrule: `FREQ=WEEKLY;DTSTART=20171219T013000Z;BYDAY=${values?.workDays.toString()}`, //this is going to be used for availability
       groupOnly: false,
